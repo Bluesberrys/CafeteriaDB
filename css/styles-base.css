@@ -1,0 +1,31 @@
+header {
+  background-color: #e3ba9b;
+}
+
+.search-form {
+  background-color: #b78560;
+  border-color: #b78560;
+}
+
+div.footer {
+  background-color: #e3ba9b;
+  padding: 0 5vw;
+}
+
+.btn-primary {
+  background-color: #75441f;
+  border-color: #4d2507;
+}
+
+.btn-primary:hover {
+  background-color: #4d2507;
+  border-color: #2d1604;
+}
+
+.link-secondary {
+  color: #000 !important;
+}
+
+.footer .socials {
+  font-size: 30px;
+}

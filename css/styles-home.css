@@ -1,31 +1,6 @@
-.filler-div {
-  height: 95vh;
+.carousel {
+  background-color: #000000;
 }
-
-header {
-  background-color: #e3ba9b;
-}
-
-.search-form {
-  background-color: #b78560;
-  border-color: #b78560;
-}
-
-div.footer {
-  background-color: #e3ba9b;
-  padding: 0 5vw;
-}
-
-.btn-primary {
-  background-color: #75441f;
-  border-color: #4d2507;
-}
-
-.btn-primary:hover {
-  background-color: #4d2507;
-  border-color: #2d1604;
-}
-
-.link-secondary {
-  color: #000 !important;
+.carousel img {
+  max-height: 300px;
 }

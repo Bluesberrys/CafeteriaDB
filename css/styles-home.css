@@ -1,6 +1,21 @@
 .carousel {
   background-color: #000000;
+  /* max-height: 800px; */
 }
-.carousel img {
-  max-height: 300px;
+
+div.carousel-item {
+  max-height: 70vh;
+}
+
+div.carousel-item img {
+  display: flex;
+  align-items: end;
+}
+
+main {
+  background-color: #ffeefe;
+}
+
+.card {
+  background-color: #fff2e9;
 }

@@ -16,6 +16,10 @@ div.footer {
   padding: 0 5vw;
 }
 
+.footer .socials {
+  font-size: 30px;
+}
+
 .btn-primary {
   background-color: #75441f;
   border-color: #4d2507;
@@ -26,10 +30,14 @@ div.footer {
   border-color: #2d1604;
 }
 
-.link-secondary {
-  color: #000 !important;
+.link-active {
+  color: #b78560;
+  background-color: #fff2e9;
+  border: #000 3px solid;
+  border-radius: 10px;
 }
 
-.footer .socials {
-  font-size: 30px;
+.link-active:hover {
+  color: #b78560;
+  background-color: #000;
 }

@@ -2,3 +2,9 @@ body > main {
   /* height: 80vh; */
   background-color: #ffeefe;
 }
+
+.card-title {
+  background-color: rgba(31, 31, 31, 0.7);
+  /* border: #000 3px solid; */
+  border-radius: 6px;
+}

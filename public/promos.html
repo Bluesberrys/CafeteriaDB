@@ -32,7 +32,7 @@
   <body>
     <!--  -->
     <!-- header -->
-    <header class="p-3 border-bottom border-black sticky-lg-top">
+    <header class="p-1 border-bottom border-black sticky-lg-top">
       <div class="container">
         <div
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
@@ -64,9 +64,6 @@
                 >Promociones</a
               >
             </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-body-emphasis">Lorem</a>
-            </li>
           </ul>
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <input
@@ -97,7 +94,24 @@
                 alt="..."
               />
               <div class="card-img-overlay d-flex align-items-end">
-                <h2 class="card-title">Almuerzo en paris</h2>
+                <a
+                  class="card-title fs-2 p-2"
+                  data-bs-toggle="collapse"
+                  href="#almuerzoParis"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Almuerzo en paris
+                </a>
+              </div>
+            </div>
+            <div class="collapse col-12 vt" id="almuerzoParis">
+              <div class="card card-body">
+                <p class="m-0">
+                  Frappe de caramelo acompañado de un croissant preparado con
+                  huevo
+                </p>
               </div>
             </div>
           </div>
@@ -110,7 +124,23 @@
                 alt="..."
               />
               <div class="card-img-overlay d-flex align-items-end">
-                <h2 class="card-title">Desayuno gran manzana</h2>
+                <a
+                  class="card-title fs-2"
+                  data-bs-toggle="collapse"
+                  href="#granManzana"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >Desayuno gran manzana</a
+                >
+                <div class="collapse" id="granManzana">
+                  <div class="card card-body">
+                    <p>
+                      Frappe de caramelo acompañado de un croissant preparado
+                      con huevo
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -123,10 +153,27 @@
                 alt="..."
               />
               <div class="card-img-overlay d-flex align-items-end">
-                <h2 class="card-title">Brunch mediterraneo</h2>
+                <a
+                  class="card-title fs-2"
+                  data-bs-toggle="collapse"
+                  href="#mediterraneo"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >Brunch mediterraneo</a
+                >
+                <div class="collapse col-12" id="mediterraneo">
+                  <div class="card card-body">
+                    <p class="m-0">
+                      Frappe de caramelo acompañado de un croissant preparado
+                      con huevo
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!--  -->
         </div>
       </div>
       <div class="container">

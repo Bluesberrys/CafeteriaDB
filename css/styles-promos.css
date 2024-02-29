@@ -4,7 +4,23 @@ body > main {
 }
 
 .card-title {
+  color: #fff;
   background-color: rgba(31, 31, 31, 0.7);
-  /* border: #000 3px solid; */
-  border-radius: 6px;
+  border: #fff 3px solid;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  cursor: pointer;
+  color: #d3d3d3;
+}
+
+.card-body {
+  background-color: #75441f;
+  color: #fff;
+}
+
+.card {
+  border-radius: 0px !important;
 }

@@ -38,7 +38,7 @@
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
         >
           <a
-            href="./index.html"
+            href="./index.php"
             class="d-flex align-items-center mb-2 me-5 mb-lg-0 link-body-emphasis text-decoration-none"
           >
             <img
@@ -52,7 +52,7 @@
             class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 fs-4"
           >
             <li>
-              <a href="./index.html" class="nav-link px-2 link-active"
+              <a href="./index.php" class="nav-link px-2 link-active"
                 >Inicio</a
               >
             </li>
@@ -61,7 +61,7 @@
             </li>
             <li>
               <a
-                href="./public/promos.html"
+                href="./public/promos.php"
                 class="nav-link px-2 link-body-emphasis"
                 >Promociones</a
               >

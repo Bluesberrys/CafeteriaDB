@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MonkeyCafe</title>
     <link rel="icon" type="image/png" href="../img/logo/monkkeycafelogo_noName.png" />
@@ -20,12 +21,13 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles-base.css" />
     <link rel="stylesheet" href="../css/styles-promos.css" />
+    <link rel="stylesheet" href="../css/styles-cart.css" />
   </head>
 
   <body>
     <!--  -->
     <!-- header -->
-    <header class="p-1 border-bottom border-black sticky-lg-top">
+    <header class="p-1 border-bottom border-black">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a
@@ -51,7 +53,10 @@
               placeholder="Search..."
               aria-label="Search" />
           </form>
-          <a href="#" class="link-body-emphasis fs-2"><i class="bi bi-bag-fill"></i></a>
+          <div class="shopping fs-2">
+            <i class="bi bi-bag-fill"></i>
+            <span class="quantity">0</span>
+          </div>
         </div>
       </div>
     </header>
@@ -60,78 +65,15 @@
     <main>
       <div class="container py-2">
         <h2 class="fs-1 mt-3">Combos de temporada</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <!-- Card 1 -->
-          <div class="col">
-            <div class="card text-bg-dark">
-              <img src="../img/promos/CroissantFrappe.jpeg" class="card-img" alt="..." />
-              <div class="card-img-overlay d-flex align-items-end">
-                <a
-                  class="card-title fs-2 p-2"
-                  data-bs-toggle="collapse"
-                  href="#almuerzoParis"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseExample">
-                  Almuerzo en paris
-                </a>
-              </div>
-            </div>
-            <div class="collapse col-12 vt" id="almuerzoParis">
-              <div class="card card-body">
-                <p class="m-0 fs-5">Frappe de caramelo acompañado de un croissant preparado con huevo</p>
-              </div>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="col">
-            <div class="card text-bg-dark">
-              <img src="../img/promos/EggBagelMilkshake.jpeg" class="card-img" alt="..." />
-              <div class="card-img-overlay d-flex align-items-end">
-                <a
-                  class="card-title fs-2 p-2"
-                  data-bs-toggle="collapse"
-                  href="#granManzana"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                  >Desayuno gran manzana</a
-                >
-              </div>
-            </div>
-            <div class="collapse col-12 vt" id="granManzana">
-              <div class="card card-body">
-                <p class="m-0 fs-5">Malteada de vainilla acompañado de un bagel de huevo revuelto</p>
-              </div>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="col">
-            <div class="card text-bg-dark">
-              <img src="../img/promos/CiabattaMimosa.jpeg" class="card-img" alt="..." />
-              <div class="card-img-overlay d-flex align-items-end">
-                <a
-                  class="card-title fs-2 p-2"
-                  data-bs-toggle="collapse"
-                  href="#mediterraneo"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
-                  >Brunch mediterraneo</a
-                >
-              </div>
-            </div>
-            <div class="collapse col-12" id="mediterraneo">
-              <div class="card card-body">
-                <p class="m-0 fs-5">Chapata preparada acompañada por una mimosa</p>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 list"></div>
       </div>
-      <div class="container">
-        <h2 class="fs-1 mt-2">Paquetes del dia</h2>
+      <div class="cart">
+        <h1>Cart</h1>
+        <ul class="listCart"></ul>
+        <div class="checkOut">
+          <div class="total">0</div>
+          <div class="closeShopping">Close</div>
+        </div>
       </div>
     </main>
 
@@ -238,5 +180,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>

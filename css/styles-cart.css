@@ -1,0 +1,92 @@
+.container {
+  width: 1000px;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header .shopping {
+  position: relative;
+  text-align: right;
+}
+header .shopping img {
+  width: 40px;
+}
+header .shopping span {
+  background: #361e00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #bb8862;
+  height: 100vh;
+  transition: 0.5s;
+}
+.active .cart {
+  left: calc(100% - 500px);
+}
+.active .container {
+  transform: translateX(-200px);
+}
+.cart h1 {
+  color: #000;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.cart .checkOut {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cart .checkOut div {
+  background-color: #ffe5d2;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cart .checkOut div:nth-child(2) {
+  background-color: #2d1604;
+  color: #fff;
+}
+.listCart li {
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCart li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCart li img {
+  width: 90%;
+}
+.listCart li button {
+  background-color: #fff5;
+  border: none;
+}
+.listCart .count {
+  margin: 0 10px;
+}
